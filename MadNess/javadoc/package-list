@@ -1,0 +1,14 @@
+com.chipsandwaycool.entity
+com.chipsandwaycool.entity.game
+com.chipsandwaycool.entity.player
+com.chipsandwaycool.entity.team
+com.chipsandwaycool.servlet
+com.chipsandwaycool.servlet.game
+com.chipsandwaycool.servlet.player
+com.chipsandwaycool.servlet.team
+com.chipsandwaycool.servlet.utility
+com.chipsandwaycool.utility
+com.elseforif.entity.net
+com.elseforif.log
+com.elseforif.servlet.utility
+com.elseforif.utility

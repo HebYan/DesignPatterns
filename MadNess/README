@@ -1,0 +1,36 @@
+Salut!
+
+This is my March Madness site, built on pure servlets and the Derby embedded
+database.  It's a scoring interface for an NCAA pool, allowing players (users)
+to be created, who can then log in and pick their favorite teams to win.  An
+administrator is responsible for defining the teams and entering the winners
+for each subsequent game.  Players can then watch their scores increase in the
+Scoreboard page.
+
+Included you'll find all the sources, including the relevant classes from the
+elseforif-servlet JAR, and the associated Javadocs, as well as the WAR file.
+
+To run the application, first create the directory "/var/derby" and make sure
+it is writable by your servlet container, drop the WAR into your "webapps"
+directory, and then enter a URL like this into your browser:
+
+  http://localhost:8080/madness/home
+
+If you are using Windows, you'll have to expand the WAR first and change the
+path to Derby's working directory, which is defined in the "web.xml" file as
+init-param "data-files-dir".
+
+In any case, once the application has started up successfully, you should
+edit "web.xml" and change the parameter "rebuild-database" to "false".
+Otherwise, the database will be recreated each time you run the app'.
+
+(If you want to connect to Derby while the application is running, you can
+change the "database-url" setting to the one commented out.  Using that
+connection URL will cause Derby engine to start up in client/server mode.)
+
+Another feature of this site is that it will send certain emails to all active
+players, at the bidding of administrator users.  This will fail unless you
+change the "smtp-host" setting (see also "sender-email") to point to an
+accessible SMTP server.
+
+Hope you enjoy it!
